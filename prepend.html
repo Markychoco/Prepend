@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Append or Prepend Multiple Elements in jQuery</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        var newHeading = "<h1>Important Note:</h1>";
+        var newParagraph = document.createElement("p");
+		newParagraph.innerHTML = "<em>Eka hapa some text...</em>";
+        var newImage = $('<img src="https://i.pinimg.com/236x/8b/a4/a2/8ba4a2bca7b3b40177afb6f072df9165--emojis-the-album.jpg" alt="Symbol">');
+        $("body").append(newHeading, newParagraph, newImage);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button">Insert Content</button>
+    <p>Upon catching wind that the huge tree, which stands almost 12 metres high with wide branches spreading above Mpaka Road and Waiyaki Way junction, would be felled, residents and conservationists took to the streets in protest..</p>
+</body>
+</html>
